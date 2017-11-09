@@ -5,6 +5,9 @@
 set(no_install TRUE)
 
 find_package(GTest REQUIRED)
+message("GTEST_ROOT ${GTEST_ROOT}/bin")
+set( ENV{PATH} "$ENV{PATH};${GTEST_ROOT}/bin")
+message("$ENV{PATH}")
 
 if (WIN32)
 
