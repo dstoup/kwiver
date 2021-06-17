@@ -37,7 +37,7 @@ public:
   virtual ~merge_images() = default;
 
   void set_configuration( kwiver::vital::config_block_sptr ) override { }
-  bool check_configuration( kwiver::vital::config_block_sptr config ) const override
+  bool check_configuration( VITAL_UNUSED kwiver::vital::config_block_sptr config ) const override
   { return true; }
 
   /// Merge images
